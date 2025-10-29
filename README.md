@@ -19,15 +19,15 @@ Sistema para criação de personagens RPG com atributos sorteados, cadastro, edi
 ### Instalação e uso
 
 1. Clone este repositório:
--git clone https://github.com/Shinymonke69/Laravel_Projects/tree/Feature/RPG_Builder
+- git clone https://github.com/Shinymonke69/Laravel_Projects/tree/Feature/RPG_Builder
 2. Instale as dependências:
--composer install
--npm install
+- composer install
+- npm install
 3. Rode as migrations:
--php artisan migrate
+- php artisan migrate
 4. Inicie o servidor local:
--php artisan serve
--npm run dev
+- php artisan serve
+- npm run dev
 
 ## Como contribuir
 
