@@ -15,13 +15,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased bg-[#4e342e] dark:bg-[#2d2220] relative">
-        {{-- Imagens nos cantos (customize o src depois!) --}}
-        <img src="/images/left_tavern.jpg" 
-            alt="Decoração esquerda" 
-            class="absolute left-0 top-0 h-full w-24 object-cover z-10 hidden md:block" />
-        <img src="/images/right_tavern.jpg"
-            alt="Decoração direita"
-            class="absolute right-0 top-0 h-full w-24 object-cover z-10 hidden md:block" />
 
         <div class="min-h-screen relative z-20 flex flex-col">
             @include('layouts.navigation')

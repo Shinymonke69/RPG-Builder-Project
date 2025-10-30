@@ -29,6 +29,64 @@ Sistema para criação de personagens RPG com atributos sorteados, cadastro, edi
 - php artisan serve
 - npm run dev
 
+## Documentação da API
+
+Rotas disponíveis
+```
+GET /api/personagens
+Retorna a lista de personagens.
+
+POST /api/personagens
+Cria um novo personagem.
+Body exemplo:
+{
+"nome": "Gandalf",
+"atributos": {
+    "forca": 15,
+    "destreza": 11,
+    "constituicao": 14,
+    /api/personagens/{id}
+Retorna um personagem específico.
+
+PUT /api/personagens/{id}
+Atualiza um personagem.
+Body exemplo:
+{
+"nome": "Gandalf, o Branco",
+"atributos": { ... }
+}
+
+DELETE /api/personagens/{id}
+Remove um personagem. "inteligencia": 18,
+    "sabedoria": 17,
+    "carisma": 16
+}
+}
+
+GET 
+```
+Exemplo de consumo
+- Com CURL:
+```
+curl -X POST http://localhost:8000/api/personagens \
+  -H "Content-Type: application/json" \
+  -d '{"nome":"Legolas","atributos":{"forca":12,"destreza":18,"constituicao":12,"inteligencia":14,"sabedoria":10,"carisma":13}}'
+```
+- Com Javascript (fetch):
+```
+fetch('/api/personagens', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ nome: 'Aragorn', atributos: { ... } })
+})
+.then(res => res.json())
+.then(data => console.log(data));
+```
+- Com Postman:
+```
+Configure URL e método, escolha raw > JSON, e cole o exemplo do body acima.
+```
+
 ## Como contribuir
 
 - Faça um fork do projeto
