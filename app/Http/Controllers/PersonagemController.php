@@ -19,7 +19,7 @@ class PersonagemController extends Controller
 
     public function index()
     {
-        $personagens = Personagem::where('user_id', Auth::id())->get();
+        $personagens = Personagem::where('user_id', Auth::id())->paginate(9);
         return view('personagens.index', compact('personagens'));
     }
 

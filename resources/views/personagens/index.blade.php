@@ -32,7 +32,11 @@
                         @empty
                             <p class="col-span-full text-center text-gray-500 dark:text-gray-400">Nenhum personagem cadastrado ainda.</p>
                         @endforelse
+                        
                     </div>
+                </div>
+                <div class="mt-4">
+                    {{ $personagens->links() }}
                 </div>
             </div>
         </div>
