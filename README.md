@@ -89,10 +89,7 @@ fetch('/api/personagens', {
 .then(res => res.json())
 .then(data => console.log(data));
 ```
-- Com Postman:
-```
-Configure URL e método, escolha raw > JSON, e cole o exemplo do body acima.
-```
+- Com Postman: Configure URL e método, escolha raw > JSON, e cole o exemplo do body acima.
 
 ## Como contribuir
 
