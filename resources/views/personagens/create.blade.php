@@ -28,7 +28,7 @@
                         </div>
                         <div class="mb-4">
                             <label class="block font-medium text-gray-700 dark:text-gray-300">Raça</label>
-                            <input class="form-input mt-1 block w-full" name="raça" value="{{ $raca ?? '' }}" required>
+                            <input class="form-input mt-1 block w-full" name="raca" value="{{ $raca ?? '' }}" required>
                             @if(isset($racaDetalhes['alignment']))
                                 <div class="text-sm text-gray-600 dark:text-gray-400">Alinhamento: {{ $racaDetalhes['alignment'] }}</div>
                             @endif

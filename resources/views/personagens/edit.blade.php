@@ -19,7 +19,7 @@
                         </div>
                         <div class="mb-4">
                             <label class="block font-medium text-gray-700 dark:text-gray-300">Raça</label>
-                            <input class="form-input mt-1 block w-full" name="raça" value="{{ $personagem->raça }}" required>
+                            <input class="form-input mt-1 block w-full" name="raca" value="{{ $personagem->raca }}" required>
                         </div>
                         <div class="mb-4">
                             <label class="block font-medium text-gray-700 dark:text-gray-300">Classe</label>

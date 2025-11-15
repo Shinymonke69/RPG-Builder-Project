@@ -9,7 +9,7 @@ class Personagem extends Model
     protected $table = 'personagens';
     
     protected $fillable = [
-        'user_id', 'nome', 'sobrenome', 'raça', 'classe', 'atributos', 'poderes', 'historia', 'inventario'
+        'user_id', 'nome', 'sobrenome', 'raca', 'classe', 'atributos', 'poderes', 'historia', 'inventario'
     ];
 
     protected $casts = [

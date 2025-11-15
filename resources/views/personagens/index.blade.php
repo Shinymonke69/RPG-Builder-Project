@@ -16,7 +16,7 @@
                             <div class="bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 flex flex-col space-y-3 border">
                                 <div>
                                     <h2 class="text-xl font-bold text-gray-700 dark:text-gray-200">{{ $personagem->nome }}</h2>
-                                    <p class="text-gray-500 dark:text-gray-300">Raça: <span class="font-semibold">{{ $personagem->raça }}</span></p>
+                                    <p class="text-gray-500 dark:text-gray-300">Raça: <span class="font-semibold">{{ $personagem->raca }}</span></p>
                                     <p class="text-gray-500 dark:text-gray-300">Classe: <span class="font-semibold">{{ $personagem->classe }}</span></p>
                                 </div>
                                 <div class="flex space-x-2 mt-4">

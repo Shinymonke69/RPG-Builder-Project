@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string(column: 'nome');
             $table->string('sobrenome')->nullable();
-            $table->string('raça');
+            $table->string('raca');
             $table->string(column: 'classe');
             $table->json('atributos');
             $table->text('poderes')->nullable();
