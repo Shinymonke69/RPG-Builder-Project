@@ -169,6 +169,9 @@ class PersonagemController extends Controller
     public function update(Request $request, string $id)
     {
         $personagem = Personagem::findOrFail($id);
+        if($personagem->user_id !== Auth::id()){
+            abort(403);
+        }
 
         $data = $request->validate([
             'nome' => 'required|string',
