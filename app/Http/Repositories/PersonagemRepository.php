@@ -23,7 +23,7 @@ class PersonagemRepository
         return $this->model->create($data);
     }
 
-    public function findForUser(string $id, int $userId)
+    public function findForUser(string $id, int $userId): Personagem
     {
         return $this->model->where('id', $id)->where('user_id', $userId)->firstOrFail();
     }
