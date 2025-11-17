@@ -13,7 +13,7 @@ class PersonagemResource extends JsonResource
             'id'         => $this->id,
             'nome'       => $this->nome,
             'sobrenome'  => $this->sobrenome,
-            'raça'       => $this->raça,
+            'raca'       => $this->raca,
             'classe'     => $this->classe,
             'atributos'  => $this->atributos,
             'poderes'    => $this->poderes,
