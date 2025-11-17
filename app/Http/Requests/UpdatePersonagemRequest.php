@@ -16,7 +16,7 @@ class UpdatePersonagemRequest extends FormRequest
         return [
             'nome'       => 'sometimes|required|string',
             'sobrenome'  => 'sometimes|required|string',
-            'raça'       => 'sometimes|required|string',
+            'raca'       => 'sometimes|required|string',
             'classe'     => 'sometimes|required|string',
             'atributos'  => 'sometimes|required|array',
             'poderes'    => 'nullable|string',
