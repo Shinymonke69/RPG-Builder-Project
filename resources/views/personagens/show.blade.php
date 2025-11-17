@@ -14,7 +14,7 @@
                     </div>
                     <div class="mb-4">
                         <span class="font-medium text-gray-700 dark:text-gray-300">Raça:</span>
-                        <span class="font-medium text-gray-700 dark:text-gray-300">{{ $personagem->raça }}</span>
+                        <span class="font-medium text-gray-700 dark:text-gray-300">{{ $personagem->raca }}</span>
                     </div>
                     <div class="mb-4">
                         <span class="font-medium text-gray-700 dark:text-gray-300">Classe:</span>
