@@ -16,7 +16,7 @@ class CreatePersonagemRequest extends FormRequest
         return [
             'nome'       => 'required|string',
             'sobrenome'  => 'required|string',
-            'raça'       => 'required|string',
+            'raca'       => 'required|string',
             'classe'     => 'required|string',
             'atributos'  => 'required|array',
             'poderes'    => 'nullable|string',
