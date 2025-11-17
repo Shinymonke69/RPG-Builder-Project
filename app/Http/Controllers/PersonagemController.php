@@ -16,14 +16,12 @@ class PersonagemController extends Controller
         $this->service = $service;
     }
 
-    // Listagem paginada na view
     public function index()
     {
         $personagens = $this->service->index(Auth::id());
         return view('personagens.index', compact('personagens'));
     }
 
-    // Exibe formulário de criação, já com dados sorteados
     public function create()
     {
         $dadosGerados = $this->service->generatePersonagemData();
