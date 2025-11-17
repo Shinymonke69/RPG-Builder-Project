@@ -47,7 +47,7 @@ class PersonagemService
         ];
         $inventario = $inventariosBase[array_rand($inventariosBase)];
 
-        // Atributos clássicos RPG
+        // Atributos
         $atributos = [
             'forca'         => $faker->numberBetween(8, 18),
             'destreza'      => $faker->numberBetween(8, 18),
@@ -81,7 +81,7 @@ class PersonagemService
             $racaDetalhes = $detalheRacaResp->json();
         }
 
-        // Magia/poder
+        // Magia
         $magiaResp = Http::get('https://www.dnd5eapi.co/api/spells/');
         $magias = $magiaResp->json()['results'] ?? [];
         $magiasEscolhidas = [];
